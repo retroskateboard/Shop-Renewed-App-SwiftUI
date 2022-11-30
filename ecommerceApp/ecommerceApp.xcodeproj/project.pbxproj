@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A528A322930624B00CE185B /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A528A312930624B00CE185B /* LoginPage.swift */; };
+		1A528A352930627300CE185B /* LoginPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A528A342930627300CE185B /* LoginPageModel.swift */; };
+		1A528A372930690400CE185B /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A528A362930690400CE185B /* CustomCorners.swift */; };
 		1A694E702925DBEB001659A9 /* ecommerceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A694E6F2925DBEB001659A9 /* ecommerceAppApp.swift */; };
 		1A694E722925DBEB001659A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A694E712925DBEB001659A9 /* ContentView.swift */; };
 		1A694E742925DBED001659A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A694E732925DBED001659A9 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A528A312930624B00CE185B /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		1A528A342930627300CE185B /* LoginPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageModel.swift; sourceTree = "<group>"; };
+		1A528A362930690400CE185B /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
 		1A694E6C2925DBEB001659A9 /* ecommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A694E6F2925DBEB001659A9 /* ecommerceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ecommerceAppApp.swift; sourceTree = "<group>"; };
 		1A694E712925DBEB001659A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A528A332930625C00CE185B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A528A342930627300CE185B /* LoginPageModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1A694E632925DBEB001659A9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +74,7 @@
 		1A694E6E2925DBEB001659A9 /* ecommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				1A528A332930625C00CE185B /* ViewModel */,
 				1AC87F47292DCD59009218D1 /* View */,
 				1AC87F46292DCCB0009218D1 /* Info.plist */,
 				1AC87F3F292DCC05009218D1 /* Fonts */,
@@ -93,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				1AC87F48292DCDAF009218D1 /* OnBoardingPage.swift */,
+				1A528A312930624B00CE185B /* LoginPage.swift */,
+				1A528A362930690400CE185B /* CustomCorners.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A528A322930624B00CE185B /* LoginPage.swift in Sources */,
+				1A528A372930690400CE185B /* CustomCorners.swift in Sources */,
+				1A528A352930627300CE185B /* LoginPageModel.swift in Sources */,
 				1A694E722925DBEB001659A9 /* ContentView.swift in Sources */,
 				1AC87F49292DCDAF009218D1 /* OnBoardingPage.swift in Sources */,
 				1A694E702925DBEB001659A9 /* ecommerceAppApp.swift in Sources */,
@@ -229,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -283,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -305,11 +325,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ecommerceApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "E-Commerce";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,9 +340,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = retroskateboard.ecommerceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,11 +361,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ecommerceApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "E-Commerce";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,9 +376,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = retroskateboard.ecommerceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

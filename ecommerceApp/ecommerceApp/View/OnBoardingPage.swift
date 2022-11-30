@@ -10,6 +10,7 @@ import SwiftUI
 let customFont = "Raleway-Regular"
 
 struct OnBoardingPage: View {
+    @State var showLoginPage: Bool = false
     var body: some View {
         
         VStack(alignment: .leading){
@@ -29,16 +30,18 @@ struct OnBoardingPage: View {
                 .offset(x:1)
             
             Button{
-                
+                withAnimation {
+                    showLoginPage = true
+                }
             }label: {
                 Text("Entrar")
-                    .font(.custom(customFont, size: 20))
+                    .font(.custom(customFont, size: 23))
                     .fontWeight(.semibold)
                     .padding(.vertical,18)
                     .frame(maxWidth: .infinity)
                     .background(Color.white)
-                    .cornerRadius(10)
-                    .shadow(color: Color.black.opacity(0.1),radius: 5, x: 5, y:5)
+                    .cornerRadius(30)
+                    .shadow(color: Color.black.opacity(0.4), radius: 5, x: 0, y: 5)
                     .foregroundColor(Color(red: 0.184, green: 0.431, blue: 0.553))
             }
             .padding(.horizontal,60)
@@ -48,6 +51,15 @@ struct OnBoardingPage: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
             Color(red: 0.184, green: 0.431, blue: 0.553)
+        )
+        .overlay(
+        
+            Group{
+                if showLoginPage{
+                    LoginPage()
+                        .transition(.move(edge: .trailing))
+                }
+            }
         )
     }
 }
