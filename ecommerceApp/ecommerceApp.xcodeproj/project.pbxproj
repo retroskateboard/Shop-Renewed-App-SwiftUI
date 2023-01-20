@@ -11,6 +11,14 @@
 		1A3D5B59293C08D900919952 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D5B58293C08D900919952 /* Home.swift */; };
 		1A3D5B5C293C128300919952 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D5B5B293C128300919952 /* Product.swift */; };
 		1A3D5B5E293C146C00919952 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D5B5D293C146C00919952 /* HomeViewModel.swift */; };
+		1A3DF7E92977186B00519BAB /* MoreProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DF7E82977186B00519BAB /* MoreProductsView.swift */; };
+		1A3DF7EB2978D3B600519BAB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DF7EA2978D3B600519BAB /* SearchView.swift */; };
+		1A3DF7ED2978E5F200519BAB /* StaggeredGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DF7EC2978E5F200519BAB /* StaggeredGrid.swift */; };
+		1A3DF7EF2979B24300519BAB /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DF7EE2979B24300519BAB /* ProfilePage.swift */; };
+		1A3DF7F12979D2D800519BAB /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DF7F02979D2D800519BAB /* ProductDetailView.swift */; };
+		1A3DF7F32979D32E00519BAB /* SharedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DF7F22979D32E00519BAB /* SharedDataModel.swift */; };
+		1A4F7A472979F7330035E858 /* LikedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F7A452979F7330035E858 /* LikedPage.swift */; };
+		1A4F7A482979F7330035E858 /* CartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F7A462979F7330035E858 /* CartPage.swift */; };
 		1A528A322930624B00CE185B /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A528A312930624B00CE185B /* LoginPage.swift */; };
 		1A528A352930627300CE185B /* LoginPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A528A342930627300CE185B /* LoginPageModel.swift */; };
 		1A528A372930690400CE185B /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A528A362930690400CE185B /* CustomCorners.swift */; };
@@ -29,6 +37,14 @@
 		1A3D5B58293C08D900919952 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1A3D5B5B293C128300919952 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1A3D5B5D293C146C00919952 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1A3DF7E82977186B00519BAB /* MoreProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreProductsView.swift; sourceTree = "<group>"; };
+		1A3DF7EA2978D3B600519BAB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1A3DF7EC2978E5F200519BAB /* StaggeredGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaggeredGrid.swift; sourceTree = "<group>"; };
+		1A3DF7EE2979B24300519BAB /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		1A3DF7F02979D2D800519BAB /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		1A3DF7F22979D32E00519BAB /* SharedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataModel.swift; sourceTree = "<group>"; };
+		1A4F7A452979F7330035E858 /* LikedPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedPage.swift; sourceTree = "<group>"; };
+		1A4F7A462979F7330035E858 /* CartPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartPage.swift; sourceTree = "<group>"; };
 		1A528A312930624B00CE185B /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		1A528A342930627300CE185B /* LoginPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageModel.swift; sourceTree = "<group>"; };
 		1A528A362930690400CE185B /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
@@ -59,6 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				1A3D5B58293C08D900919952 /* Home.swift */,
+				1A3DF7EE2979B24300519BAB /* ProfilePage.swift */,
+				1A4F7A462979F7330035E858 /* CartPage.swift */,
+				1A4F7A452979F7330035E858 /* LikedPage.swift */,
 			);
 			path = TabViews;
 			sourceTree = "<group>";
@@ -76,6 +95,7 @@
 			children = (
 				1A528A342930627300CE185B /* LoginPageModel.swift */,
 				1A3D5B5D293C146C00919952 /* HomeViewModel.swift */,
+				1A3DF7F22979D32E00519BAB /* SharedDataModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,11 +153,15 @@
 		1AC87F47292DCD59009218D1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A3DF7EC2978E5F200519BAB /* StaggeredGrid.swift */,
 				1A3D5B57293C08CA00919952 /* TabViews */,
 				1AC87F48292DCDAF009218D1 /* OnBoardingPage.swift */,
 				1A528A312930624B00CE185B /* LoginPage.swift */,
 				1A528A362930690400CE185B /* CustomCorners.swift */,
 				1A126B14293BFB210050A589 /* MainPage.swift */,
+				1A3DF7E82977186B00519BAB /* MoreProductsView.swift */,
+				1A3DF7EA2978D3B600519BAB /* SearchView.swift */,
+				1A3DF7F02979D2D800519BAB /* ProductDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,12 +240,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A528A322930624B00CE185B /* LoginPage.swift in Sources */,
+				1A3DF7E92977186B00519BAB /* MoreProductsView.swift in Sources */,
+				1A3DF7F32979D32E00519BAB /* SharedDataModel.swift in Sources */,
 				1A528A372930690400CE185B /* CustomCorners.swift in Sources */,
+				1A3DF7ED2978E5F200519BAB /* StaggeredGrid.swift in Sources */,
 				1A3D5B5C293C128300919952 /* Product.swift in Sources */,
+				1A3DF7EB2978D3B600519BAB /* SearchView.swift in Sources */,
 				1A3D5B5E293C146C00919952 /* HomeViewModel.swift in Sources */,
 				1A528A352930627300CE185B /* LoginPageModel.swift in Sources */,
+				1A4F7A472979F7330035E858 /* LikedPage.swift in Sources */,
+				1A4F7A482979F7330035E858 /* CartPage.swift in Sources */,
 				1A694E722925DBEB001659A9 /* ContentView.swift in Sources */,
 				1AC87F49292DCDAF009218D1 /* OnBoardingPage.swift in Sources */,
+				1A3DF7EF2979B24300519BAB /* ProfilePage.swift in Sources */,
+				1A3DF7F12979D2D800519BAB /* ProductDetailView.swift in Sources */,
 				1A126B15293BFB210050A589 /* MainPage.swift in Sources */,
 				1A3D5B59293C08D900919952 /* Home.swift in Sources */,
 				1A694E702925DBEB001659A9 /* ecommerceAppApp.swift in Sources */,
@@ -338,6 +370,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -362,6 +395,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -398,6 +432,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;

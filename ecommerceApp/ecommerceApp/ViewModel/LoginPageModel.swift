@@ -19,14 +19,21 @@ class LoginPageModel: ObservableObject {
     @Published var re_Enter_Password: String = ""
     @Published var showReEnterPassword: Bool = false
     
+    //Estado del registro
+    @AppStorage("log_Status") var log_Status: Bool = false
+    
     //Inicio de sesion:
     func Login(){
-        
+        withAnimation {
+            log_Status = true
+        }
     }
     
     //Registro
     func Register(){
-        
+        withAnimation {
+            log_Status = true
+        }
     }
     
     //Contraseña olvidada

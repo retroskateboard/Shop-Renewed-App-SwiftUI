@@ -14,7 +14,7 @@ struct LoginPage: View {
         VStack{
             
             Text(loginData.registerUser ? "Hola,\nextraño!" : "Bienvenido\nde nuevo!")
-                .font(.custom(customFont, size: 55))
+                .font(.custom(customFont, size: 48))
                 .fontWeight(.bold)
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)

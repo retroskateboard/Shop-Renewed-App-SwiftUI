@@ -11,6 +11,10 @@ struct MainPage: View {
     
     @State var currentTab: Tab = .Home
     
+    @StateObject var sharedData: SharedDataModel = SharedDataModel()
+    
+    @Namespace var animation
+    
     init(){
         UITabBar.appearance().isHidden = true
     }
@@ -21,16 +25,19 @@ struct MainPage: View {
             //Tab view
             TabView(selection: $currentTab) {
                 
-                Home()
+                Home(animation: animation)
+                    .environmentObject(sharedData)
                     .tag(Tab.Home)
                 
-                Text("Liked")
+                LikedPage()
+                    .environmentObject(sharedData)
                     .tag(Tab.Liked)
                 
-                Text("Profile")
+                ProfilePage()
                     .tag(Tab.Profile)
                 
-                Text("Cart")
+                CartPage()
+                    .environmentObject(sharedData)
                     .tag(Tab.Cart)
                 
                 
@@ -58,15 +65,28 @@ struct MainPage: View {
                             .frame(maxWidth: .infinity)
                             .foregroundColor(currentTab == tab ? Color.white : Color.black)
                     }
-
+                    
                 }
             }
             .padding([.horizontal,.bottom])
             .padding(.bottom,10)
-            .background(LinearGradient(colors: [ Color(red: 0.655, green: 0.725, blue: 0.761)], startPoint: .top, endPoint: .bottom))
         }
-        
+            .background(LinearGradient(colors: [ Color(red: 0.655, green: 0.725, blue: 0.761)], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea())
+            
+            .overlay(
+                ZStack{
+                    if let product = sharedData.detailProduct,sharedData.showDetailProduct{
+                        
+                        ProductDetailView(product: product, animation: animation)
+                            .environmentObject(sharedData)
+                        // adding transitions...
+                            .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
+                    }
+                }
+            )
     }
+        
 }
 
 struct MainPage_Previews: PreviewProvider {
